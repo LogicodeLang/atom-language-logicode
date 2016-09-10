@@ -1,0 +1,40 @@
+"scopeName": "source.logicode"
+"name": "Logicode"
+"fileTypes": ["lgc"]
+"patterns": [
+  {
+    "comment": "Binary Strings"
+    "match": "[01]+"
+    "name": "constant.numeric.logicode"
+  }
+  {
+    "comment": "Declarers"
+    "match": "(var|cond|circ|out)"
+    "name": "keyword.control.logicode"
+  }
+  {
+    "comment": "Builtins"
+    "match": "([\\+!&\\|\\/<]|input|(?<!-)>)"
+    "name": "support.function.logicode"
+  }
+  {
+    "comment": "Comments"
+    "match": "\\#(.*)"
+    "name": "comment.line.logicode"
+  }
+  {
+    "comment": "Circuit Names"
+    "match": "(?<=circ )(.*)(?=\\(.*\\)-)"
+    "name": "entity.name.function.logicode"
+  }
+  {
+    "comment": "Circuit ->s"
+    "match": "(->)"
+    "name": "storage.type.function.logicode"
+  }
+  {
+    "comment": "Variable Names"
+    "match": "(?<=var )(.*?)(?==)"
+    "name": "variable.logicode"
+  }
+]
