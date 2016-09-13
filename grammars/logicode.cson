@@ -14,7 +14,7 @@
   }
   {
     "comment": "Builtins"
-    "match": "([\\+!&\\|\\/<]|input|(?<!-)>)"
+    "match": "([\\+!&\\|\\/<~]|input|(?<!-)>)"
     "name": "support.function.logicode"
   }
   {
