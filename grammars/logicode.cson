@@ -8,13 +8,23 @@
     "name": "constant.numeric.logicode"
   }
   {
+    "comment": "Circuit Names"
+    "match": "(?<=circ )(.*)(?=\\()|(?<=\\+|out |cond )(\\w*)(?=\\()"
+    "name": "entity.name.function.logicode"
+  }
+  {
+    "comment": "Variable Names"
+    "match": "(?<=var )(.*?)(?= *=)"
+    "name": "variable.logicode"
+  }
+  {
     "comment": "Declarers"
-    "match": "(var|cond|circ|out)"
+    "match": "( *)(var|cond|circ|out)"
     "name": "keyword.control.logicode"
   }
   {
     "comment": "Builtins"
-    "match": "([\\+!&\\|\\/<~]|input|(?<!-)>)"
+    "match": "([\\+!&\\|\\/<~@]|[ab]inp|(?<!-)>)"
     "name": "support.function.logicode"
   }
   {
@@ -23,18 +33,8 @@
     "name": "comment.line.logicode"
   }
   {
-    "comment": "Circuit Names"
-    "match": "(?<=circ )(.*)(?=\\(.*\\)-)"
-    "name": "entity.name.function.logicode"
-  }
-  {
     "comment": "Circuit ->s"
     "match": "(->)"
     "name": "storage.type.function.logicode"
-  }
-  {
-    "comment": "Variable Names"
-    "match": "(?<=var )(.*?)(?==)"
-    "name": "variable.logicode"
   }
 ]
