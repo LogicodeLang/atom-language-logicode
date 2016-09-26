@@ -9,7 +9,7 @@
   }
   {
     "comment": "Circuit Names"
-    "match": "(?<=circ )(.*)(?=\\()|(?<=[\\+=]|out |cond )(\\w*)(?=\\()"
+    "match": "(?<=circ )(\\w+)(?=\\()|(?<=[\\+=\\/&!\\|,\(]|out|cond)([ \\w]+)(?=\\(.*\\))"
     "name": "entity.name.function.logicode"
   }
   {
